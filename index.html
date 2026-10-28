@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matthew Godwin</title>
   <meta name="description" content="Portfolio of Matthew Godwin — work experience and projects.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#experience">Skip to content</a>
   <main>
-    <header>
+    <header id="top" class="reveal">
       <h1>Matthew Godwin</h1>
       <p class="tagline">Software engineer. Replace this with a one-line summary of what you do.</p>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Currently at Company · Based in City</p>
       <nav>
         <a href="mailto:you@example.com">Email</a>
         <a href="https://github.com/your-username">GitHub</a>
@@ -20,48 +24,56 @@
       </nav>
     </header>
 
-    <section id="experience">
+    <section id="experience" class="reveal">
       <h2>Experience</h2>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Job Title · <a href="https://example.com">Company</a></h3>
-          <span class="meta">2024 — Present</span>
-        </div>
-        <p>A sentence or two about what you worked on and the impact it had.</p>
-      </article>
+      <ol class="timeline">
+        <li class="entry current">
+          <div class="entry-head">
+            <h3>Job Title · <a class="ext" href="https://example.com">Company</a></h3>
+            <span class="meta">2024 — Present</span>
+          </div>
+          <p>A sentence or two about what you worked on and the impact it had.</p>
+        </li>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Job Title · <a href="https://example.com">Company</a></h3>
-          <span class="meta">2021 — 2024</span>
-        </div>
-        <p>A sentence or two about what you worked on and the impact it had.</p>
-      </article>
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Job Title · <a class="ext" href="https://example.com">Company</a></h3>
+            <span class="meta">2021 — 2024</span>
+          </div>
+          <p>A sentence or two about what you worked on and the impact it had.</p>
+        </li>
+      </ol>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal">
       <h2>Projects</h2>
 
       <article class="entry">
         <div class="entry-head">
-          <h3><a href="https://example.com">Project Name</a></h3>
-          <span class="meta">TypeScript, React</span>
+          <h3><a class="ext" href="https://example.com">Project Name</a></h3>
         </div>
         <p>Short description of the project and what makes it interesting.</p>
+        <ul class="tags">
+          <li>TypeScript</li>
+          <li>React</li>
+        </ul>
       </article>
 
       <article class="entry">
         <div class="entry-head">
-          <h3><a href="https://example.com">Project Name</a></h3>
-          <span class="meta">Python</span>
+          <h3><a class="ext" href="https://example.com">Project Name</a></h3>
         </div>
         <p>Short description of the project and what makes it interesting.</p>
+        <ul class="tags">
+          <li>Python</li>
+        </ul>
       </article>
     </section>
 
-    <footer>
+    <footer class="reveal">
       <p>© <span id="year">2026</span> Matthew Godwin</p>
+      <a href="#top">Back to top ↑</a>
     </footer>
   </main>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
